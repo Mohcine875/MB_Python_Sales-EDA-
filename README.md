@@ -1,65 +1,251 @@
-# Diwali Sales Data Analysis
+# Diwali Sales Analysis — Python EDA
 
 ## Project Overview
 
-This project focuses on analyzing sales data during the Diwali festival. Through Exploratory Data Analysis (EDA), we explore customer demographics, purchasing patterns, and key product categories. The aim is to gain actionable insights that can guide marketing strategies and improve customer targeting.
+This project presents an exploratory data analysis of customer sales transactions during the Diwali season.
+
+The objective is to analyze customer demographics, purchasing behavior, product performance, and sales trends to identify business insights that can support marketing strategy, customer targeting, and sales planning.
+
+---
+
+## Business Objectives
+
+This analysis was designed to answer key business questions:
+
+- Which customer groups contribute the most to sales?
+- How do gender, age group, marital status, and occupation affect purchasing behavior?
+- Which states generate the highest sales?
+- Which product categories perform best during the Diwali season?
+- What customer segments should be targeted for future marketing campaigns?
+- How can sales insights support better business decision-making?
+
+---
 
 ## Dataset
 
-- **Name**: Diwali Sales Data
-- **Rows**: 11,251
-- **Columns**: 15
-- **Key Attributes**:
-  - `User_ID`: Unique ID of the customer
-  - `Gender`: Gender of the customer
-  - `Age Group`: Age group of the customer
-  - `Marital_Status`: Marital status of the customer (0: Unmarried, 1: Married)
-  - `State`: State of residence
-  - `Occupation`: Profession of the customer
-  - `Product_Category`: Category of product purchased
-  - `Orders`: Number of products ordered
-  - `Amount`: Total amount spent by the customer
+The project uses a Diwali sales dataset containing customer transaction records.
 
-## Libraries Used
+| Property | Description |
+|---|---|
+| Dataset | Diwali Sales Data |
+| Rows | 11,251 |
+| Columns | 15 |
+| Analysis Type | Exploratory Data Analysis |
+| Main Tool | Python |
 
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `seaborn`
+Main columns include:
 
-## EDA Steps
+- `User_ID`
+- `Gender`
+- `Age Group`
+- `Marital_Status`
+- `State`
+- `Occupation`
+- `Product_Category`
+- `Orders`
+- `Amount`
 
-1. **Data Cleaning**:
-   - Removed irrelevant columns like `Status` and `unnamed1`.
-   - Handled missing values in the `Amount` column by filling them with the average amount.
+---
 
-2. **Demographic Analysis**:
-   - Analyzed the distribution of sales across gender, age group, and marital status.
-   - Visualized sales distribution by different states and zones.
+## Tools Used
 
-3. **Sales Insights**:
-   - Explored total sales across various product categories.
-   - Identified the top 10 most sold products.
-   
-4. **Key Findings**:
-   - The majority of customers who purchased products during Diwali were married women aged 26-35.
-   - The highest sales came from the states of Uttar Pradesh, Maharashtra, and Karnataka.
-   - Customers working in IT, Healthcare, and Aviation were more likely to purchase products from the Food, Clothing, and Electronics categories.
+| Tool / Library | Purpose |
+|---|---|
+| Python | Data analysis and scripting |
+| Pandas | Data cleaning and transformation |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| Jupyter Notebook | Interactive analysis |
+| GitHub | Project documentation and version control |
 
-## Conclusion
+---
 
-**Married women aged 26-35 from Uttar Pradesh, Maharashtra, and Karnataka, working in IT, Healthcare, and Aviation, are more likely to buy products from the Food, Clothing, and Electronics categories.** This insight can help businesses tailor their marketing strategies towards this key demographic during the Diwali festival.
+## Project Workflow
+
+```text
+Raw Sales Data
+   ↓
+Data Loading
+   ↓
+Data Cleaning
+   ↓
+Exploratory Data Analysis
+   ↓
+Data Visualization
+   ↓
+Business Insights
+   ↓
+Recommendations
+```
+
+---
+
+## Data Cleaning
+
+The data cleaning process included:
+
+- loading the dataset into a pandas DataFrame
+- reviewing dataset shape and column types
+- checking missing values
+- removing irrelevant columns such as `Status` and `unnamed1`
+- handling missing values in the `Amount` column
+- validating key columns used for analysis
+- preparing the dataset for visualization and business interpretation
+
+---
+
+## Exploratory Data Analysis
+
+The EDA focused on understanding customer behavior and sales performance during the Diwali season.
+
+Main analysis areas included:
+
+- gender-based purchasing behavior
+- age group sales distribution
+- marital status analysis
+- occupation-based sales trends
+- state-level sales performance
+- product category performance
+- order count and sales amount analysis
+
+---
+
+## Key Analysis Areas
+
+### Customer Demographics
+
+The analysis explores how customer characteristics influence purchasing behavior.
+
+Focus areas include:
+
+- gender
+- age group
+- marital status
+- occupation
+- state
+
+### Sales Performance
+
+The analysis identifies which groups and categories generate the highest sales.
+
+Focus areas include:
+
+- total sales amount
+- number of orders
+- state-wise sales contribution
+- product category performance
+- customer segment contribution
+
+### Product Category Analysis
+
+The project analyzes product categories to identify stronger-performing categories during the Diwali sales period.
+
+---
 
 ## Visualizations
 
-Several visualizations were created to highlight key insights, including:
-- Sales distribution by gender, age group, and state.
-- Top-selling products.
-- Distribution of sales across different product categories.
+The project includes visual analysis using charts such as:
 
-## Future Work
+- count plots
+- bar charts
+- sales distribution charts
+- demographic comparison charts
+- product category comparison charts
+- state-level sales visualizations
 
-- Further refine marketing strategies to target key customer segments identified in this analysis.
-- Use predictive modeling to forecast future sales trends during the Diwali season.
+These visualizations help communicate trends clearly and support business interpretation.
 
 ---
+
+## Key Insights
+
+The analysis identified several important business insights:
+
+- Female customers contributed strongly to overall sales.
+- Married customers showed strong purchasing behavior.
+- Customers in the 26–35 age group represented an important sales segment.
+- Uttar Pradesh, Maharashtra, and Karnataka generated the highest sales.
+- Customers working in IT, Healthcare, and Aviation showed strong purchasing patterns.
+- Food, Clothing, and Electronics were among the stronger product categories.
+
+---
+
+## Business Recommendations
+
+Based on the analysis, the following actions are recommended:
+
+- Focus marketing campaigns on high-value customer segments.
+- Prioritize product categories with stronger sales performance.
+- Use state-level insights to improve regional marketing strategy.
+- Target customer groups with higher purchase frequency and higher sales amount.
+- Use demographic insights to improve seasonal promotional planning.
+- Continue using EDA and visualization to support future sales campaigns.
+
+---
+
+## Repository Contents
+
+```text
+MB_Python_Sales-EDA-/
+│
+├── README.md
+├── Diwali Sales Data.csv
+└── Diwali_Sales_Analysis.ipynb
+```
+
+---
+
+## Python Skills Demonstrated
+
+This project demonstrates practical Python data analysis skills, including:
+
+- loading CSV data with pandas
+- cleaning and preparing datasets
+- handling missing values
+- exploring categorical and numerical variables
+- grouping and aggregating data
+- creating visualizations with Matplotlib and Seaborn
+- extracting business insights from sales data
+- communicating findings clearly in a portfolio project
+
+---
+
+## Project Value
+
+This project demonstrates the ability to:
+
+- perform exploratory data analysis using Python
+- analyze customer and sales behavior
+- create meaningful visualizations
+- identify business trends from transactional data
+- translate analysis results into business recommendations
+- present Python EDA work in a professional GitHub portfolio
+
+---
+
+## Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+- Data Cleaning
+- Exploratory Data Analysis
+- Business Analytics
+
+---
+
+## Project Status
+
+Completed as a Python exploratory data analysis project.
+
+---
+
+## Author
+
+**Mohcine Behate**
+
+Python Data Analysis and Business Insights Portfolio Project
